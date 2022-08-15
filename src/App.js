@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import TestA from './Components/TestA';
+import TestB from './Components/TestB';
+
 
 function App() {
+  const city = 'Lac'
+  var age = 28
+  var tab = ['France',"Tunise",'Italie']
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <h1>Basma</h1>
+       <h2>Mahmoud</h2>
+       <TestA city={city} tab={tab}/>
+       <TestB age={age}/>
     </div>
+   
   );
 }
 
